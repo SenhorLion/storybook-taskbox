@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 
 import { PureInboxScreen } from './InboxScreen';
 import { defaultTasks } from './TaskList.stories';
+import { StoryContainer } from '../utils/StoryContainer';
 
 const pinnedTasks = [
   ...defaultTasks,
@@ -20,6 +21,10 @@ const store = {
 };
 
 storiesOf('InboxScreen', module)
-  .addDecorator(story => <Provider store={store}>{story()}</Provider>)
+  .addDecorator(story => (
+    <Provider store={store}>
+      <StoryContainer title='Inbox Screen'>{story()}</StoryContainer>
+    </Provider>
+  ))
   .add('default', () => <PureInboxScreen />)
   .add('error', () => <PureInboxScreen error='Something' />);
