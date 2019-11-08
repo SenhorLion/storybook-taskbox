@@ -69,7 +69,7 @@ export const Content = () => {
 
 addons.register('my/design-assets', () => {
   addons.add('design-assets/panel', {
-    title: 'assets',
+    title: 'design assets',
     type: types.PANEL,
     render: ({ active, key }) => (
       <AddonPanel active={active} key={key}>
