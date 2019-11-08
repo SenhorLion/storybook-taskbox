@@ -23,20 +23,30 @@ export const actions = {
 
 const longTitle = `This task's name is absurdly large. In fact, I think if I keep going I might end up with content overflow. What will happen? The star that represents a pinned task could have text overlapping. The text could cut-off abruptly when it reaches the star. I hope not`;
 
+export const createTaskKnob = state => {
+  return object('task', { ...state });
+};
+
 storiesOf('Task', module)
   .addDecorator(story => (
     <StoryContainer title='Task'>{story()}</StoryContainer>
   ))
   .addDecorator(withKnobs)
   .add('default', () => (
-    <Task task={object('task', { ...task })} {...actions} />
+    <Task task={createTaskKnob({ ...task })} {...actions} />
   ))
   .add('pinned', () => (
-    <Task task={{ ...task, state: 'TASK_PINNED' }} {...actions} />
+    <Task
+      task={createTaskKnob({ ...task, state: 'TASK_PINNED' })}
+      {...actions}
+    />
   ))
   .add('archived', () => (
-    <Task task={{ ...task, state: 'TASK_ARCHIVED' }} {...actions} />
+    <Task
+      task={createTaskKnob({ ...task, state: 'TASK_ARCHIVED' })}
+      {...actions}
+    />
   ))
   .add('long title', () => (
-    <Task task={{ ...task, title: longTitle }} {...actions} />
+    <Task task={createTaskKnob({ ...task, title: longTitle })} {...actions} />
   ));
