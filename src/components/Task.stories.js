@@ -7,7 +7,7 @@ import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import Task from './Task';
 
-import { StoryContainer } from '../utils/StoryContainer';
+// import { StoryContainer } from '../utils/StoryContainer';
 
 export const task = {
   id: '1',
@@ -28,25 +28,14 @@ export const createTaskKnob = state => {
 const longTitle = `This task's name is absurdly large. In fact, I think if I keep going I might end up with content overflow. What will happen? The star that represents a pinned task could have text overlapping. The text could cut-off abruptly when it reaches the star. I hope not`;
 
 storiesOf('Task', module)
-  .addDecorator(story => (
-    <StoryContainer title='Task'>{story()}</StoryContainer>
+  .addParameters({ component: Task, componentSubtitle: 'Ima asubtitle nutha' })
+  .add('Default', () => <Task task={{ ...task }} {...actions} />)
+  .add('Pinned', () => (
+    <Task task={{ ...task, state: 'TASK_PINNED' }} {...actions} />
   ))
-  .addDecorator(withKnobs)
-  .add('default', () => (
-    <Task task={createTaskKnob({ ...task })} {...actions} />
+  .add('Archived', () => (
+    <Task task={{ ...task, state: 'TASK_ARCHIVED' }} {...actions} />
   ))
-  .add('pinned', () => (
-    <Task
-      task={createTaskKnob({ ...task, state: 'TASK_PINNED' })}
-      {...actions}
-    />
-  ))
-  .add('archived', () => (
-    <Task
-      task={createTaskKnob({ ...task, state: 'TASK_ARCHIVED' })}
-      {...actions}
-    />
-  ))
-  .add('long title', () => (
-    <Task task={createTaskKnob({ ...task, title: longTitle })} {...actions} />
+  .add('Long title', () => (
+    <Task task={{ ...task, title: longTitle }} {...actions} />
   ));

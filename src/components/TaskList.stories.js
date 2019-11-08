@@ -21,9 +21,6 @@ export const pinnedTasks = [
 ];
 
 storiesOf('TaskList', module)
-  .addDecorator(story => (
-    <StoryContainer title='Task List'>{story()}</StoryContainer>
-  ))
   .add('default', () => (
     <PureTaskList tasks={defaultTasks} {...actions}></PureTaskList>
   ))
