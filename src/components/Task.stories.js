@@ -28,14 +28,6 @@ storiesOf('Task', module)
     <StoryContainer title='Task'>{story()}</StoryContainer>
   ))
   .addDecorator(withKnobs)
-  .addParameters({
-    assets: [
-      '/designs/app.png',
-      '/designs/items.png',
-      '/designs/list-1.png',
-      '/designs/list-2.png'
-    ]
-  })
   .add('default', () => (
     <Task task={object('task', { ...task })} {...actions} />
   ))
