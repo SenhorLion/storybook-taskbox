@@ -1,6 +1,14 @@
-import { configure, addParameters } from '@storybook/react';
+import React from 'react';
+import { configure, addParameters, addDecorator } from '@storybook/react';
 import requireContext from 'require-context.macro';
 import '../src/index.css';
+import { StoryLayoutContainer } from '../src/utils/StoryContainer';
+
+addDecorator(story => (
+  <>
+    <StoryLayoutContainer>{story()}</StoryLayoutContainer>
+  </>
+));
 
 addParameters({
   assets: [
