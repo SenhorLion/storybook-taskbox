@@ -1,3 +1,7 @@
+# Storybook Example Project
+
+Storybook setup with CI to deploy with github and netlify using the [learnstorybook](https://www.learnstorybook.com/intro-to-storybook) example.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
