@@ -14,21 +14,21 @@ addParameters({
   assets: [
     {
       name: 'app',
-      url: '/designs/app.png'
+      url: '/designs/app.png',
     },
     {
       name: 'items',
-      url: '/designs/items.png'
+      url: '/designs/items.png',
     },
     {
       name: 'list 1',
-      url: '/designs/list-1.png'
+      url: '/designs/list-1.png',
     },
     {
       name: 'list 2',
-      url: '/designs/list-2.png'
-    }
-  ]
+      url: '/designs/list-2.png',
+    },
+  ],
 });
 
 const req = requireContext('../src', true, /\.stories.(js|mdx)$/);
