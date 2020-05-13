@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 const defaultClasses = {
   errors: {
     backgroundColor: '#f1c2c2',
-    color: '#a00000',
+    color: '#a00000'
   },
   success: {
     backgroundColor: '#00aa00',
-    color: '#ffeeff',
-  },
+    color: '#ffeeff'
+  }
 };
 
 export const Button = ({ title, type, classes = defaultClasses }) => {
@@ -23,12 +23,12 @@ export const Button = ({ title, type, classes = defaultClasses }) => {
 Button.propTypes = {
   title: PropTypes.string,
   type: PropTypes.string,
-  classes: PropTypes.string,
+  classes: PropTypes.string
 };
 
 Button.defaultProps = {
   title: 'Button',
-  type: 'success',
+  type: 'success'
 };
 
 // TODO: Wrap in HoC

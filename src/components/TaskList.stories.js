@@ -4,8 +4,6 @@ import { storiesOf } from '@storybook/react';
 import { PureTaskList } from './TaskList';
 import { task, actions } from './Task.stories';
 
-import { StoryContainer } from '../utils/StoryContainer';
-
 export const defaultTasks = [
   { ...task, id: '1', title: 'Task 1' },
   { ...task, id: '2', title: 'Task 2' },

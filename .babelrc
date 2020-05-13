@@ -1,4 +1,7 @@
 {
-  "presets": ["@babel/preset-react"],
+  "presets": [
+    "@babel/preset-react",
+    ["react-app", { "flow": false, "typescript": true }]
+  ],
   "plugins": ["macros"]
 }

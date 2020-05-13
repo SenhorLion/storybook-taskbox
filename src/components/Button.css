@@ -1,0 +1,24 @@
+.button span {
+  margin: auto;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.button {
+  padding: 0px 20px;
+  height: 49px;
+  border-radius: 2px;
+  border: 2px solid var(--ui-bkgd, #3d5567);
+  display: inline-flex;
+  background-color: var(--ui-bkgd, #3d5567);
+}
+
+.button:hover:not(.button_disabled) {
+  cursor: pointer;
+}
+
+.button--disabled {
+  --ui-bkgd: rgba(61, 85, 103, 0.3);
+}

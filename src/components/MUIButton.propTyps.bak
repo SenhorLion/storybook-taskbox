@@ -8,12 +8,12 @@ const styles = theme =>
   createStyles({
     errors: {
       backgroundColor: '#f1c2c2',
-      color: '#a00000',
+      color: '#a00000'
     },
     success: {
       backgroundColor: '#00aa00',
-      color: '#ffeeff',
-    },
+      color: '#ffeeff'
+    }
   });
 
 export const MUIButton = ({ title, status, classes }) => {
@@ -44,12 +44,12 @@ MUIButton.propTypes = {
   /**
    * Classes: material-ui
    **/
-  classes: PropTypes.string,
+  classes: PropTypes.string
 };
 
 MUIButton.defaultProps = {
   title: 'Button',
-  status: 'success',
+  status: 'success'
 };
 
 // TODO: Wrap in HoC

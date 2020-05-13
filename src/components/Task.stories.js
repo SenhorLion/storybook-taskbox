@@ -3,7 +3,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, object } from '@storybook/addon-knobs/react';
+import { /*withKnobs,*/ object } from '@storybook/addon-knobs/react';
 
 import Task from './Task';
 
@@ -13,12 +13,12 @@ export const task = {
   id: '1',
   title: 'Test Task',
   state: 'TASK_INBOX',
-  updatedAt: new Date(2018, 0, 1, 9, 0),
+  updatedAt: new Date(2018, 0, 1, 9, 0)
 };
 
 export const actions = {
   onPinTask: action('onPinTask'),
-  onArchiveTask: action('onArchiveTask'),
+  onArchiveTask: action('onArchiveTask')
 };
 
 export const createTaskKnob = state => {
@@ -30,7 +30,7 @@ const longTitle = `This task's name is absurdly large. In fact, I think if I kee
 storiesOf('Task', module)
   .addParameters({
     component: Task,
-    componentSubtitle: 'Ima subtitle for the component',
+    componentSubtitle: 'Ima subtitle for the component'
   })
   .add('Default', () => <Task task={{ ...task }} {...actions} />)
   .add('Pinned', () => (
