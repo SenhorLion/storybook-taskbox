@@ -1,5 +1,12 @@
 # Storybook Example Project
 
+## TODO:
+
+1. Add React Testing Library
+1. Add a component to test with jest and React Testing Library
+
+---
+
 Storybook setup with CI to deploy with github and netlify using the [learnstorybook](https://www.learnstorybook.com/intro-to-storybook) example.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
