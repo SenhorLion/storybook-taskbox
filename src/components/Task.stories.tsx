@@ -5,11 +5,11 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { /*withKnobs,*/ object } from '@storybook/addon-knobs/react';
 
-import Task from './Task';
+import Task, { ITask } from './Task';
 
 // import { StoryContainer } from '../utils/StoryContainer';
 
-export const task = {
+export const task: ITask = {
   id: '1',
   title: 'Test Task',
   state: 'TASK_INBOX',

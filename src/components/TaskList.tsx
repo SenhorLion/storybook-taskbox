@@ -1,10 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { archiveTask, pinTask } from '../lib/redux';
-import Task from './Task';
+import Task, { ITask } from './Task';
 
-export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
+export interface IProps {
+  loading?: boolean;
+  tasks: ITask[];
+  onArchiveTask: (id) => void;
+  onPinTask: (id) => void;
+}
+
+export const PureTaskList = ({
+  loading = false,
+  tasks,
+  onPinTask,
+  onArchiveTask
+}: IProps) => {
   const events = {
     onPinTask,
     onArchiveTask
@@ -58,16 +70,16 @@ export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   );
 };
 
-PureTaskList.propTypes = {
-  loading: PropTypes.bool,
-  tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
-  onPinTask: PropTypes.func.isRequired,
-  onArchiveTask: PropTypes.func.isRequired
-};
+// PureTaskList.propTypes = {
+//   loading: PropTypes.bool,
+//   tasks: PropTypes.arrayOf(Task.propTypes.task).isRequired,
+//   onPinTask: PropTypes.func.isRequired,
+//   onArchiveTask: PropTypes.func.isRequired
+// };
 
-PureTaskList.defaultProps = {
-  loading: false
-};
+// PureTaskList.defaultProps = {
+//   loading: false
+// };
 
 export default connect(
   ({ tasks }) => ({

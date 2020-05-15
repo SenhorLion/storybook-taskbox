@@ -19,6 +19,10 @@ export const pinnedTasks = [
 ];
 
 storiesOf('TaskList', module)
+  .addParameters({
+    component: PureTaskList,
+    componentSubtitle: 'The TaskList component'
+  })
   .add('default', () => (
     <PureTaskList tasks={defaultTasks} {...actions}></PureTaskList>
   ))
