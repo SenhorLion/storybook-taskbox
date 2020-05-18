@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Task archived 1`] = `
+exports[`Storyshots Button Default 1`] = `
 <div
   style={
     Object {
@@ -8,15 +8,606 @@ exports[`Storyshots Task archived 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
+  <button
+    className="button "
   >
-    Task
-  </h1>
+    <span>
+      Hello world
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Button Disabled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <button
+    className="button button--disabled"
+    onClick={[Function]}
+  >
+    <span>
+      I'm a disabled button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots FavouriteNumber Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <div>
+    <label
+      htmlFor="favorite-number"
+    >
+      Favorite Number
+    </label>
+    <input
+      id="favorite-number"
+      onChange={[Function]}
+      type="number"
+      value={0}
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots InboxScreen default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <div>
+    <h1
+      style={
+        Object {
+          "marginBottom": "1rem",
+        }
+      }
+    >
+      Inbox Screen
+    </h1>
+    <div
+      className="page lists-show"
+    >
+      <nav>
+        <h1
+          className="title-page"
+        >
+          <span
+            className="title-wrapper"
+          >
+            Taskbox
+          </span>
+        </h1>
+      </nav>
+      <div
+        className="list-items"
+      >
+        <div
+          className="list-item TASK_PINNED"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 8 (pinned)"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="list-item TASK_INBOX"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 1"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="list-item TASK_INBOX"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 2"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="list-item TASK_INBOX"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 3"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="list-item TASK_INBOX"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 4"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="list-item TASK_INBOX"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 5"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+        <div
+          className="list-item TASK_INBOX"
+        >
+          <label
+            className="checkbox"
+          >
+            <input
+              defaultChecked={false}
+              disabled={true}
+              name="checked"
+              type="checkbox"
+            />
+            <span
+              className="checkbox-custom"
+              onClick={[Function]}
+            />
+          </label>
+          <div
+            className="title"
+          >
+            <input
+              placeholder="Input title"
+              readOnly={true}
+              style={
+                Object {
+                  "textOverflow": "ellipsis",
+                }
+              }
+              type="text"
+              value="Task 6"
+            />
+          </div>
+          <div
+            className="actions"
+            onClick={[Function]}
+          >
+            <button
+              onClick={[Function]}
+            >
+              <span
+                className="icon-star"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots InboxScreen error 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <div>
+    <h1
+      style={
+        Object {
+          "marginBottom": "1rem",
+        }
+      }
+    >
+      Inbox Screen
+    </h1>
+    <div
+      className="page lists-show"
+    >
+      <div
+        className="wrapper-message"
+      >
+        <span
+          className="icon-face-sad"
+        />
+        <div
+          className="title-message"
+        >
+          Oh no!
+        </div>
+        <div
+          className="subtitle-message"
+        >
+          Something went wrong
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots MUIButton Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained PureMUIButton-success-2 MuiButton-containedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Hello 
+      Ima btn
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots MUIButton With Title 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained PureMUIButton-success-35 MuiButton-containedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Hello 
+      Mui Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots MUIButton With Title and Type as error 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained PureMUIButton-error-67 MuiButton-containedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Hello 
+      Mui Error Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots MUIButton With Title and Type as success 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
+  <button
+    className="MuiButtonBase-root MuiButton-root MuiButton-contained PureMUIButton-success-101 MuiButton-containedPrimary"
+    disabled={false}
+    onBlur={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <span
+      className="MuiButton-label"
+    >
+      Hello 
+      Mui Success Button
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Task Archived 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
   <div
     className="list-item TASK_ARCHIVED"
   >
@@ -40,6 +631,11 @@ exports[`Storyshots Task archived 1`] = `
       <input
         placeholder="Input title"
         readOnly={true}
+        style={
+          Object {
+            "textOverflow": "ellipsis",
+          }
+        }
         type="text"
         value="Test Task"
       />
@@ -52,7 +648,7 @@ exports[`Storyshots Task archived 1`] = `
 </div>
 `;
 
-exports[`Storyshots Task default 1`] = `
+exports[`Storyshots Task Default 1`] = `
 <div
   style={
     Object {
@@ -60,15 +656,6 @@ exports[`Storyshots Task default 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
-  >
-    Task
-  </h1>
   <div
     className="list-item TASK_INBOX"
   >
@@ -92,6 +679,11 @@ exports[`Storyshots Task default 1`] = `
       <input
         placeholder="Input title"
         readOnly={true}
+        style={
+          Object {
+            "textOverflow": "ellipsis",
+          }
+        }
         type="text"
         value="Test Task"
       />
@@ -100,19 +692,19 @@ exports[`Storyshots Task default 1`] = `
       className="actions"
       onClick={[Function]}
     >
-      <a
+      <button
         onClick={[Function]}
       >
         <span
           className="icon-star"
         />
-      </a>
+      </button>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Task pinned 1`] = `
+exports[`Storyshots Task Long title 1`] = `
 <div
   style={
     Object {
@@ -120,15 +712,62 @@ exports[`Storyshots Task pinned 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
+  <div
+    className="list-item TASK_INBOX"
   >
-    Task
-  </h1>
+    <label
+      className="checkbox"
+    >
+      <input
+        defaultChecked={false}
+        disabled={true}
+        name="checked"
+        type="checkbox"
+      />
+      <span
+        className="checkbox-custom"
+        onClick={[Function]}
+      />
+    </label>
+    <div
+      className="title"
+    >
+      <input
+        placeholder="Input title"
+        readOnly={true}
+        style={
+          Object {
+            "textOverflow": "ellipsis",
+          }
+        }
+        type="text"
+        value="This task's name is absurdly large. In fact, I think if I keep going I might end up with content overflow. What will happen? The star that represents a pinned task could have text overlapping. The text could cut-off abruptly when it reaches the star. I hope not"
+      />
+    </div>
+    <div
+      className="actions"
+      onClick={[Function]}
+    >
+      <button
+        onClick={[Function]}
+      >
+        <span
+          className="icon-star"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Task Pinned 1`] = `
+<div
+  style={
+    Object {
+      "padding": "3rem",
+    }
+  }
+>
   <div
     className="list-item TASK_PINNED"
   >
@@ -152,6 +791,11 @@ exports[`Storyshots Task pinned 1`] = `
       <input
         placeholder="Input title"
         readOnly={true}
+        style={
+          Object {
+            "textOverflow": "ellipsis",
+          }
+        }
         type="text"
         value="Test Task"
       />
@@ -160,13 +804,13 @@ exports[`Storyshots Task pinned 1`] = `
       className="actions"
       onClick={[Function]}
     >
-      <a
+      <button
         onClick={[Function]}
       >
         <span
           className="icon-star"
         />
-      </a>
+      </button>
     </div>
   </div>
 </div>
@@ -180,15 +824,6 @@ exports[`Storyshots TaskList default 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
-  >
-    Task List
-  </h1>
   <div
     className="list-items"
   >
@@ -215,6 +850,11 @@ exports[`Storyshots TaskList default 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 1"
         />
@@ -223,13 +863,13 @@ exports[`Storyshots TaskList default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -255,6 +895,11 @@ exports[`Storyshots TaskList default 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 2"
         />
@@ -263,13 +908,13 @@ exports[`Storyshots TaskList default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -295,6 +940,11 @@ exports[`Storyshots TaskList default 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 3"
         />
@@ -303,13 +953,13 @@ exports[`Storyshots TaskList default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -335,6 +985,11 @@ exports[`Storyshots TaskList default 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 4"
         />
@@ -343,13 +998,13 @@ exports[`Storyshots TaskList default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -375,6 +1030,11 @@ exports[`Storyshots TaskList default 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 5"
         />
@@ -383,13 +1043,13 @@ exports[`Storyshots TaskList default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -415,6 +1075,11 @@ exports[`Storyshots TaskList default 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 6"
         />
@@ -423,13 +1088,13 @@ exports[`Storyshots TaskList default 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
   </div>
@@ -444,15 +1109,6 @@ exports[`Storyshots TaskList empty 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
-  >
-    Task List
-  </h1>
   <div
     className="list-items"
   >
@@ -485,15 +1141,6 @@ exports[`Storyshots TaskList loading 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
-  >
-    Task List
-  </h1>
   <div
     className="list-items"
   >
@@ -641,15 +1288,6 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
     }
   }
 >
-  <h1
-    style={
-      Object {
-        "marginBottom": "1rem",
-      }
-    }
-  >
-    Task List
-  </h1>
   <div
     className="list-items"
   >
@@ -676,6 +1314,11 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 6 (pinned)"
         />
@@ -684,13 +1327,13 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -716,6 +1359,11 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 1"
         />
@@ -724,13 +1372,13 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -756,6 +1404,11 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 2"
         />
@@ -764,13 +1417,13 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -796,6 +1449,11 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 3"
         />
@@ -804,13 +1462,13 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -836,6 +1494,11 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 4"
         />
@@ -844,13 +1507,13 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
     <div
@@ -876,6 +1539,11 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         <input
           placeholder="Input title"
           readOnly={true}
+          style={
+            Object {
+              "textOverflow": "ellipsis",
+            }
+          }
           type="text"
           value="Task 5"
         />
@@ -884,13 +1552,13 @@ exports[`Storyshots TaskList pinnedTasks 1`] = `
         className="actions"
         onClick={[Function]}
       >
-        <a
+        <button
           onClick={[Function]}
         >
           <span
             className="icon-star"
           />
-        </a>
+        </button>
       </div>
     </div>
   </div>
